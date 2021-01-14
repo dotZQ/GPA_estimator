@@ -5,7 +5,8 @@ from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
 from sklearn import preprocessing
 
-df = pd.read_csv('/Users/zq314159/Downloads/GPA.csv')
+#import your file 
+df = pd.read_csv('/GPA.csv')
 
 train , test = train_test_split(df,test_size=0.2,random_state=0)
 x = train['SAT'].to_frame()
